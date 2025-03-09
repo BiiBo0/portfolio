@@ -82,6 +82,14 @@ a:hover{
 .bio{
     width: 50%;
 }
+.bio p{
+
+    font-family: sans-serif;
+    color: rgb(95, 95, 95);
+    text-align: start;
+    line-height: 1.5;
+    font-weight: 600;
+}
 .photo{
     width: 30%;
     position: relative;
@@ -122,12 +130,14 @@ hr{
     padding: 10px 20px;
     font-size: 18px;
     font-weight: 100;
+    color: rgb(79, 79, 79);
 }
 .about h1{
     padding: 5px 0px;
 }
 .border{
     font-weight: 700;
+    color: black;
 }
 .services{
     height: 80vh;
@@ -200,8 +210,12 @@ hr{
 
 }
 .item p{
-    text-align: center;
+    text-align: start;
     color: rgb(94, 94, 94);
+    line-height: 1.5;
+    font-weight: 500;
+    padding: 10px 0;
+
 }
 
 
