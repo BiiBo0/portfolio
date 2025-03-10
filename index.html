@@ -10,31 +10,29 @@
     <div class="navbar">
         <h2>BiiBo</h2>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Testimonials</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a id="link" href="#home">Home</a></li>
+            <li><a  href="#about">About</a></li>
+            <li><a  href="#services">Services</a></li>
+            <li><a  href="">Portfolio</a></li>
+            <li><a  href="">Testimonials</a></li>
+            <li><a  href="">Blog</a></li>
+            <li><a  href="">Contact</a></li>
         </ul>
     </div>
-
     <div id="home" class="header">
         <div class="layer">
             <div class="home">
                 <h2>Hello, I'm</h2>
                 <h1>Basel Mohamed</h1>
-                <h2>Professional Web Developer</h2>
+                <h2>Professional Web <span id="typing"></span></h2>
             </div>
         </div>
     </div>
-
     <div id="about" class="about">
-        <div class="photo">
+        <div id="myPhoto" class="photo">
             <img src="images/Biibo-Photoroom.jpg" alt="Basel Mohamed">
         </div>
-        <div class="bio">
+        <div id="bio" class="bio">
             <h1><span style="color: #ff305b;">I</span> HELLO,</h1>
             <p>As a Frontend Developer and Software Engineer, I create seamless, user-centric digital experiences by blending creativity with technical precision. Proficient in HTML, CSS, JavaScript, and frameworks like React and Angular, I build intuitive, responsive interfaces and robust full-stack solutions. I thrive on solving complex challenges and delivering high-quality results. Let’s collaborate to bring your vision to life with inspiring code.</p>
             <hr>
@@ -52,7 +50,6 @@
             </ul>
         </div>
     </div>
-
     <div id="services" class="services">
         <h2 class="headline">Our Services</h2>
         <div class="sections">
@@ -78,5 +75,8 @@
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
+
+    <div id="typed-text"></div>
 </body>
 </html>
