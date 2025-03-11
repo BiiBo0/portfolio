@@ -40,25 +40,64 @@ function type() {
         }
     }
 }
+var services=document.querySelectorAll(".item");
+console.log(services);
 
-var photo= document.getElementById("myPhoto");
-var bio= document.getElementById("bio");
 
 window.addEventListener('scroll', function() {
+    var photo= document.getElementById("myPhoto");
+    var bio= document.getElementById("bio");
+    var html=document.getElementById("html");
+    var css=document.getElementById("css");
+    var java=document.getElementById("java");
     var valueOfScorll=window.scrollY;
     console.log(valueOfScorll);
+    if(valueOfScorll<=10){
+        photo.style.left=-600+'px';
+        bio.style.right=-800+'px';
+        html.style.width=0+"%";
+        html.innerHTML='0%';
+        css.style.width=0+"%";
+        css.innerHTML='0%';
+        java.style.width=0+"%";
+        java.innerHTML='0%';
+        services.forEach((service) => {
+            service.style.opacity=0;
+        });
+    }
     if(valueOfScorll>=200){
         photo.style.left=0+'px';
         bio.style.right=0+'px';
         // bio.style.display = 'block';
     }
-    if(valueOfScorll>=1200 || valueOfScorll <= 200){
-        photo.style.left=-600+'px';
-        bio.style.right=-800+'px';
+    if(valueOfScorll>=1060){
+        services.forEach((service) => {
+            service.style.opacity=1;
+        });
+    }
+    if(valueOfScorll>=1540){
+        html.style.width=90+"%";
+        html.innerHTML='90%';
+        css.style.width=85+"%";
+        css.innerHTML='85%';
+        java.style.width=75+"%";
+        java.innerHTML='75%';
     }
 });
 
-
-
-// Start the typing effect
 type();
+
+// document.addEventListener("scroll", function () {
+//     const skillsSection = document.getElementById("skills");
+//     const skillBars = document.querySelectorAll(".skill-level");
+  
+//     const sectionTop = skillsSection.offsetTop;
+//     const sectionHeight = skillsSection.offsetHeight;
+//     const scrollPosition = window.scrollY + window.innerHeight;
+  
+//     if (scrollPosition > sectionTop + sectionHeight / 2) {
+//       skillBars.forEach((bar) => {
+//         bar.style.width = bar.getAttribute("data-percent");
+//       });
+//     }
+//   });
