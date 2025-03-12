@@ -87,6 +87,12 @@ nav ul li:hover{
     font-family: sans-serif;
     
 }
+.aboutMe{
+    font-family: sans-serif;
+    text-align: center; 
+    font-size: 50px; 
+    margin-top: 70px;
+}
 .bio{
     width: 50%;
     position: relative;
@@ -307,14 +313,23 @@ body {
 
 @media screen and (max-width: 768px) {
     .navbar {
-      flex-direction: column;
-      padding: 10px;
+      /* flex-direction: column; */
+    padding: 10px;
     text-align: center;
+    justify-content: space-between;
+    align-items: start;
     }
   
+    nav h2{
+        position: absolute;
+        left: 45%;
+    }
     .navbar ul {
       flex-direction: column;
       gap: 10px;
+      margin: 0px;
+      position: absolute;
+      right: -500px;
     }
   
     .home h1 {
@@ -327,32 +342,51 @@ body {
   
     .about {
       padding: 20px;
+      flex-direction: column;
+      height: 150vh;
+    }
+    .aboutMe{ 
+        font-size: 40px; 
+        margin-top: 40px;
     }
   
     .photo {
-      max-width: 250px;
+      /* max-width: 500px; */
+      margin-bottom: 50px;
+      width: 70%;
     }
   
     .bio {
-      text-align: center;
+      /* text-align: center; */
+      width: 100%;
     }
   
     .about ul {
-      flex-direction: column;
+      /* flex-direction: column; */
       align-items: center;
     }
   
     .services {
       padding: 20px;
+      height: 120vh;
+
+    }
+    .sections{
+        flex-direction: column-reverse;
+      align-items: center;
     }
   
     .headline::after,
     .headline::before {
       display: none;
     }
+    .headline{
+        font-size: 40px;
+        margin-top: 0px;
+    }
   
     .item {
-      max-width: 100%;
+      width: 100%;
     margin-bottom: 20px;
     }
   }
