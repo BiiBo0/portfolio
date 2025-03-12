@@ -312,6 +312,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
+    body{
+        overflow-x: hidden;
+    }
     .navbar {
       /* flex-direction: column; */
     padding: 10px;
@@ -391,7 +395,7 @@ body {
     }
   }
 
-  @media screen and (max-width: 480px) {
+  /* @media screen and (max-width: 480px) {
     .home h1 {
       font-size: 30px;
     }
@@ -419,7 +423,7 @@ body {
     .item p {
       font-size: 14px;
     }
-  }
+  } */
 
 /* @media screen and (max-width: 768px) {
 
